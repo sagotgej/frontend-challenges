@@ -7,21 +7,190 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Space tourism website</title>
+
+  <style>
+   /* Bellefair, Barlow, Barlow condensed fonts */
+   @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+
+   body {
+     margin: 0 0 0 0;
+     overflow: hidden;
+     background-image: url("./assets/home/background-home-desktop.jpg");
+     background-size: cover;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+   }
+   header {
+     display: flex;
+     flex-direction: row;
+     padding-top: 40px;
+   }
+   header > div {
+     flex: 1;
+     display: flex;
+     flex-direction: row;
+   }
+   header > div > img {
+     padding-left: 64px;
+     width: 48px;
+     height: 48px;
+     margin: auto 0 auto 0;
+   }
+   header > div > hr {
+     border: none;
+     opacity: 25%;
+     background-color: #D9D9D9;
+     height: 2px;
+     width: 100%;
+     margin: auto -32px auto 64px;
+     z-index: 1;
+   }
+   header > menu {
+     flex: 1;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     gap: 48px;
+     margin: 0 0 0 0;
+     padding: 0 64px 0 64px;
+     background-color: rgba(255, 255, 255, 4%);
+     backdrop-filter: blur(30px);
+   }
+   header > menu > div {
+     display: flex;
+     height: 96px;
+     align-items: center;
+     flex-grow: initial;
+   }
+   .tp1 {
+     font-family: "Bellefair", serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 144px;
+     line-height: normal;
+     letter-spacing: 0px;
+     color: white;
+     margin: 0 0 0 0;
+     padding: 0 0 0 0;
+   }
+   .tp4 {
+     font-family: "Bellefair", serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 32px;
+     line-height: normal;
+     letter-spacing: 0px;
+     color: white;
+     margin: 0 0 0 0;
+   }
+   .tp5 {
+     font-family: "Barlow Condensed", serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 28px;
+     line-height: normal;
+     letter-spacing: 4px;
+     color: #D0D6F9;
+     margin: 0 0 0 0;
+   }
+   .tp8 {
+     font-family: "Barlow Condensed", serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 16px;
+     line-height: normal;
+     letter-spacing: 2px;
+     color: white;
+   }
+   .tp9 {
+     font-family: "Barlow", serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 18px;
+     line-height: 180%;
+     letter-spacing: 0px;
+     color: #D0D6F9;
+     margin: 0 0 0 0;
+   }
+   main {
+     flex-grow: 1;
+     display: flex;
+     flex-direction: column;
+     padding: 128px 0 128px 0;
+     justify-content: end;
+   }
+   #travel-space {
+     display: flex;
+     gap: 24px;
+     flex-direction: column;
+   }
+   #main-content {
+     display: flex;
+     flex-direction: row;
+     flex: initial;
+     justify-content: center;
+   }
+   #main-content > div {
+     width: 540px;
+     flex: initial;
+   }
+   #white-circle {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: black;
+     width: 272px;
+     height: 272px;
+     background-color: white;
+     border-radius: 50%;
+     margin-left: auto;
+     text-align: center;
+   }
+  </style>
 </head>
 <body>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  <header>
+    <div>
+      <img src="./assets/shared/logo.svg" />
+      <hr />
+    </div>
+    <menu class="tp8">
+      <div><b>00</b>&nbsp;&nbsp;HOME</div>
+      <div><b>01</b>&nbsp;&nbsp;DESTINATION</div>
+      <div><b>02</b>&nbsp;&nbsp;CREW</div>
+      <div><b>03</b>&nbsp;&nbsp;TECHNOLOGY</div>
+    </menu>
+  </header>
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
+  <main>
+    <div id="main-content">
+      <div id="travel-space">
+	<p class="tp5">SO, YOU WANT TO TRAVEL TO</p>
+	<p class="tp1">SPACE</p>
+	<p class="tp9">
+	  Let’s face it; if you want to go to space, you might as well genuinely go to
+	  outer space and not hover kind of on the edge of it. Well sit back, and relax
+	  because we’ll give you a truly out of this world experience!
+	</p>
+      </div>
+      <div id="explore">
+	<div id="white-circle" class="tp4">EXPLORE</div>
+      </div>
+    </div>
+  </main>
 
-  Explore
+  <!-- 00 Home
+       01 Destination
+       02 Crew
+       03 Technology
+
+       
+
+       Explore
+  -->
 
 </body>
 </html>
